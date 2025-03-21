@@ -1,3 +1,5 @@
+using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +12,8 @@ public class FuelingNozzle : MonoBehaviour
     private FuelTank fuelTank;
     private Animator animator;
 
+    [SerializeField] private TextMeshProUGUI gasCounter;
+
     private void Awake() => animator = GetComponent<Animator>();
 
     private void OnTriggerEnter(Collider other)
@@ -19,7 +23,12 @@ public class FuelingNozzle : MonoBehaviour
             fuelTank = _fuelTank;
 
             if (fuelTank.IsMax() == false)
+            {
                 canFuel = true;
+                gasCounter.gameObject.SetActive(true);
+                gasCounter.text = $"{(int)(fuelTank.fuelAmount)}/{fuelTank.requiredFuel}";
+
+            }
         }
     }
 
@@ -28,6 +37,7 @@ public class FuelingNozzle : MonoBehaviour
         if (other.TryGetComponent<FuelTank>(out FuelTank _fuelTank))
         {
             canFuel = false;
+            gasCounter.gameObject.SetActive(false);
         }
     }
 
@@ -48,9 +58,10 @@ public class FuelingNozzle : MonoBehaviour
             }
 
             fuelTank.Refuel(fuelingSpeed);
+            gasCounter.text = $"{(int)(fuelTank.fuelAmount)}/{fuelTank.requiredFuel}";
         }
 
-        if(isFueling && Mouse.current.leftButton.isPressed == false ||
+        if (isFueling && Mouse.current.leftButton.isPressed == false ||
             isFueling && canFuel == false)
         {
             Debug.Log("Stop fueling");

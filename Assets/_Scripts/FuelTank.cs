@@ -2,20 +2,20 @@ using UnityEngine;
 
 public class FuelTank : MonoBehaviour
 {
-    public float maxFuel = 100f;
-    public float fuelAmount = 50f;
+    public float requiredFuel = 35f;
+    public float fuelAmount = 0f;
 
 
     public void Refuel(float amount)
     {
         fuelAmount += amount;
-        if (fuelAmount > maxFuel)
+        if (fuelAmount > requiredFuel)
         {
-            fuelAmount = maxFuel;
+            fuelAmount = requiredFuel;
         }
         Debug.Log("Fuel amount - " + fuelAmount);
 
     }
 
-    public bool IsMax() => fuelAmount == maxFuel;
+    public bool IsMax() => fuelAmount == requiredFuel;
 }
