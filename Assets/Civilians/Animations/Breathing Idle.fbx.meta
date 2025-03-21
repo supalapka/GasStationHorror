@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1a207aa2e06d09c4696f59def8730789
+guid: 6930e4ae2494cc3479c1b07f10f7e99e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -17,7 +17,10 @@ ModelImporter:
     removeConstantScaleCurves: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'mixamo.com' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Justin:Neck1' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -29,11 +32,40 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: mixamo.com
+      internalID: -203655887218126122
+      firstFrame: 0
+      lastFrame: 238
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1.3
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -521,469 +553,459 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Mixamo-Justin_HiRes(Clone)
+    - name: Breathing Idle(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Glasses
-      parentName: Mixamo-Justin_HiRes(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Toon_Vince_Geo
-      parentName: Mixamo-Justin_HiRes(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: Justin:Hips
-      parentName: Mixamo-Justin_HiRes(Clone)
-      position: {x: 0, y: 0.012893289, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      parentName: Breathing Idle(Clone)
+      position: {x: -0.0004942676, y: 0.94888073, z: 0.003312419}
+      rotation: {x: -0.013265562, y: 0.0010756119, z: 0.009248172, w: 0.9998687}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:Spine
       parentName: Justin:Hips
-      position: {x: 3.441071e-27, y: 0.0011994214, z: 0.00020502732}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0, y: 0.092263, z: 0.015771}
+      rotation: {x: 0.008446402, y: 0.0011048818, z: -0.00007305458, w: 0.99996376}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:Spine1
       parentName: Justin:Spine
-      position: {x: -0, y: 0.0021130235, z: -0.00002152872}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0, y: 0.16253999, z: -0.001656}
+      rotation: {x: 0.0088794, y: 0.02163575, z: -0.0010827414, w: 0.99972594}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:Spine2
       parentName: Justin:Spine1
-      position: {x: -0, y: 0.0017731541, z: -0.00016799963}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0, y: 0.13639599, z: -0.012922999}
+      rotation: {x: 0.00882675, y: 0.021607528, z: -0.0014607585, w: 0.99972653}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:Neck
       parentName: Justin:Spine2
-      position: {x: -0, y: 0.0018040672, z: -0.0005660443}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0, y: 0.13877401, z: -0.043541998}
+      rotation: {x: -0.012085435, y: -0.003596791, z: 0.0063719274, w: 0.9999002}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:Neck1
       parentName: Justin:Neck
-      position: {x: -0, y: 0.0005642035, z: 0.00012049637}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0, y: 0.0434, z: 0.009269}
+      rotation: {x: -0.012085349, y: -0.0035967762, z: 0.0063719405, w: 0.9999002}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:Head
       parentName: Justin:Neck1
-      position: {x: -3.441071e-27, y: 0.0005234594, z: 0.00011160764}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0, y: 0.040266, z: 0.0085849995}
+      rotation: {x: -0.01208554, y: -0.003596776, z: 0.006371932, w: 0.9999002}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:HeadTop_End
       parentName: Justin:Head
-      position: {x: -6.721596e-20, y: 0.0032252034, z: 0.000016006756}
+      position: {x: -0, y: 0.248093, z: 0.001231}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftEye
       parentName: Justin:Head
-      position: {x: -0.000464321, y: 0.0009954246, z: 0.0015056898}
+      position: {x: -0.035717, y: 0.076571, z: 0.115821995}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightEye
       parentName: Justin:Head
-      position: {x: 0.000464321, y: 0.0009954246, z: 0.0015056898}
+      position: {x: 0.035717, y: 0.076571, z: 0.115821995}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:Jaw
       parentName: Justin:Head
-      position: {x: -0, y: 0.000013236744, z: 0.0006981152}
+      position: {x: -0, y: 0.001018, z: 0.053701}
       rotation: {x: -0.0064445836, y: 0, z: -0, w: 0.99997926}
-      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
     - name: Justin:TongueBack
       parentName: Justin:Jaw
-      position: {x: -1.0323214e-26, y: -0.00014935438, z: 0.0006910637}
-      rotation: {x: -0.00000001935772, y: 0, z: -0, w: 1}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      position: {x: -0, y: -0.011489, z: 0.053159}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Justin:TongueTip
       parentName: Justin:Jaw
-      position: {x: -1.0323214e-26, y: -0.00028154693, z: 0.0010584168}
-      rotation: {x: -0.00000001935772, y: 0, z: -0, w: 1}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      position: {x: -0, y: -0.021657, z: 0.081416994}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftLipLower
       parentName: Justin:Jaw
-      position: {x: -0.00018526062, y: -0.00026339336, z: 0.0012010167}
-      rotation: {x: -0.00000001935772, y: 0, z: -0, w: 1}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      position: {x: -0.014250999, y: -0.020260999, z: 0.09238599}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Justin:JawEND
       parentName: Justin:Jaw
-      position: {x: -1.0323214e-26, y: -0.00033554804, z: 0.0012720576}
-      rotation: {x: -0.00000001935772, y: 0, z: -0, w: 1}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      position: {x: -0, y: -0.025811, z: 0.097851}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightLipLower
       parentName: Justin:Jaw
-      position: {x: 0.00018526062, y: -0.00026339336, z: 0.0012010167}
-      rotation: {x: -0.00000001935772, y: 0, z: -0, w: 1}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      position: {x: 0.014250999, y: -0.020260999, z: 0.09238599}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightLipCorner
       parentName: Justin:Jaw
-      position: {x: 0.00049725425, y: -0.00006639336, z: 0.0009211587}
-      rotation: {x: -0.00000001935772, y: 0, z: -0, w: 1}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      position: {x: 0.03825, y: -0.0051069995, z: 0.070858}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftLipCorner
       parentName: Justin:Jaw
-      position: {x: -0.00049725425, y: -0.00006639336, z: 0.0009211587}
-      rotation: {x: -0.00000001935772, y: 0, z: -0, w: 1}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      position: {x: -0.03825, y: -0.0051069995, z: 0.070858}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftLipUpper
       parentName: Justin:Head
-      position: {x: -0.00018851718, y: -0.00008019908, z: 0.00198592}
+      position: {x: -0.014500999, y: -0.006169, z: 0.152763}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftNostril
       parentName: Justin:Head
-      position: {x: -0.000278877, y: 0.0002228335, z: 0.002045661}
+      position: {x: -0.021452, y: 0.017141, z: 0.15735899}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftCheek
       parentName: Justin:Head
-      position: {x: -0.000639889, y: 0.00043185533, z: 0.0016795684}
+      position: {x: -0.049222, y: 0.03322, z: 0.129198}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftEyelidLower
       parentName: Justin:Head
-      position: {x: -0.000464321, y: 0.0009954246, z: 0.0015056898}
+      position: {x: -0.035717, y: 0.076571, z: 0.115821995}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftEyelidUpper
       parentName: Justin:Head
-      position: {x: -0.000464321, y: 0.0009954246, z: 0.0015056898}
+      position: {x: -0.035717, y: 0.076571, z: 0.115821995}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftInnerBrow
       parentName: Justin:Head
-      position: {x: -0.0002419357, y: 0.0012582642, z: 0.0019438134}
+      position: {x: -0.018609999, y: 0.09678999, z: 0.149524}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftIOuterBrow
       parentName: Justin:Head
-      position: {x: -0.0006892669, y: 0.0012277673, z: 0.001749869}
+      position: {x: -0.053021, y: 0.094444, z: 0.13460499}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightInnerBrow
       parentName: Justin:Head
-      position: {x: 0.0002419357, y: 0.0012582642, z: 0.0019438134}
+      position: {x: 0.018609999, y: 0.09678999, z: 0.149524}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightIOuterBrow
       parentName: Justin:Head
-      position: {x: 0.0006892669, y: 0.0012277673, z: 0.001749869}
+      position: {x: 0.053021, y: 0.094444, z: 0.13460499}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightEyelidUpper
       parentName: Justin:Head
-      position: {x: 0.000464321, y: 0.0009954246, z: 0.0015056898}
+      position: {x: 0.035717, y: 0.076571, z: 0.115821995}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightEyelidLower
       parentName: Justin:Head
-      position: {x: 0.000464321, y: 0.0009954246, z: 0.0015056898}
+      position: {x: 0.035717, y: 0.076571, z: 0.115821995}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightCheek
       parentName: Justin:Head
-      position: {x: 0.000639889, y: 0.00043185533, z: 0.0016795684}
+      position: {x: 0.049222, y: 0.03322, z: 0.129198}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightNostril
       parentName: Justin:Head
-      position: {x: 0.000278877, y: 0.0002228335, z: 0.002045661}
+      position: {x: 0.021452, y: 0.017141, z: 0.15735899}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightLipUpper
       parentName: Justin:Head
-      position: {x: 0.00018851718, y: -0.00008019908, z: 0.00198592}
+      position: {x: 0.014500999, y: -0.006169, z: 0.152763}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftShoulder
       parentName: Justin:Spine2
-      position: {x: -0.00079874933, y: 0.0013243114, z: -0.0004931216}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.061442, y: 0.10187, z: -0.037932}
+      rotation: {x: -0.0033638356, y: -0.06435627, z: 0.0041875797, w: 0.9979125}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftArm
       parentName: Justin:LeftShoulder
-      position: {x: -0.0016014818, y: -0.00014468688, z: -0.00023314939}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.123191, y: -0.01113, z: -0.017934998}
+      rotation: {x: 0.15265636, y: 0.028672736, z: -0.0029937124, w: 0.9878588}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftForeArm
       parentName: Justin:LeftArm
-      position: {x: -0.0035993115, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.27686998, y: 0, z: 0}
+      rotation: {x: -0.002502709, y: 0.02593206, z: -0.0095754955, w: 0.9996148}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHand
       parentName: Justin:LeftForeArm
-      position: {x: -0.003623591, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.278738, y: 0, z: 0}
+      rotation: {x: 0.107200265, y: -0.14464854, z: 0.1395578, w: 0.9737087}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandThumb1
       parentName: Justin:LeftHand
-      position: {x: -0.00030920672, y: -0.0001303769, z: 0.00034072166}
-      rotation: {x: -0.043439403, y: 0.028132962, z: -0.04149814, w: 0.9977973}
+      position: {x: -0.023784999, y: -0.010029, z: 0.026208999}
+      rotation: {x: -0.21346673, y: -0.0037142162, z: -0.15858534, w: 0.9639859}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandThumb2
       parentName: Justin:LeftHandThumb1
-      position: {x: -0.0004371079, y: -0.00013037688, z: 0.00036917033}
-      rotation: {x: -0.024530597, y: 0.081992805, z: -0.00008833874, w: 0.996331}
+      position: {x: -0.033624, y: -0.010029, z: 0.028397998}
+      rotation: {x: -0.0035075832, y: 0.08920933, z: -0.013568395, w: 0.99591434}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandThumb3
       parentName: Justin:LeftHandThumb2
-      position: {x: -0.0005852333, y: -0.00017478497, z: 0.00028317477}
-      rotation: {x: -0.0078116646, y: 0.01088404, z: -0.009426273, w: 0.99986583}
+      position: {x: -0.045018, y: -0.013444999, z: 0.021782998}
+      rotation: {x: -0.028862327, y: 0.014010538, z: -0.05584626, w: 0.9979238}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandThumb4
       parentName: Justin:LeftHandThumb3
-      position: {x: -0.00033799995, y: -0.00012999999, z: 0.00012999999}
+      position: {x: -0.025999999, y: -0.01, z: 0.01}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandMiddle1
       parentName: Justin:LeftHand
-      position: {x: -0.0013603079, y: 0.000079918864, z: 0.00005587234}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.104638994, y: 0.006148, z: 0.004298}
+      rotation: {x: -0.00064052595, y: 0.021978438, z: 0.04581882, w: 0.9987078}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandMiddle2
       parentName: Justin:LeftHandMiddle1
-      position: {x: -0.00075297174, y: 2.523528e-27, z: 5.773159e-20}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.057921, y: 0, z: 0}
+      rotation: {x: -0.00000008591446, y: -0.00059349055, z: 0.032981798, w: 0.99945575}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandMiddle3
       parentName: Justin:LeftHandMiddle2
-      position: {x: -0.00048271246, y: -1.261764e-27, z: -2.8865795e-20}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.037132, y: 0, z: 0}
+      rotation: {x: 0.000000013112753, y: -0.0006655925, z: 0.037073053, w: 0.9993124}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandMiddle4
       parentName: Justin:LeftHandMiddle3
-      position: {x: -0.00029899998, y: 1.4779287e-17, z: 1.9228485e-35}
+      position: {x: -0.022999998, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandIndex1
       parentName: Justin:LeftHand
-      position: {x: -0.0013512896, y: 0.00007991888, z: 0.00035171397}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.103944995, y: 0.006148, z: 0.027054999}
+      rotation: {x: -0.0006309148, y: 0.02436506, z: 0.04859063, w: 0.9985213}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandIndex2
       parentName: Justin:LeftHandIndex1
-      position: {x: -0.00072140753, y: -3.694822e-18, z: 5.773175e-20}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.055493, y: 0, z: 0}
+      rotation: {x: 0.00000006332993, y: -0.0004986561, z: 0.027723739, w: 0.99961555}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandIndex3
       parentName: Justin:LeftHandIndex2
-      position: {x: -0.00044084547, y: -7.389644e-18, z: -2.8865476e-20}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.033910997, y: 0, z: 0}
+      rotation: {x: 0.000000008919153, y: -0.00064517534, z: 0.03594603, w: 0.9993535}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandIndex4
       parentName: Justin:LeftHandIndex3
-      position: {x: -0.00032499997, y: 3.694822e-18, z: 1.9228485e-35}
+      position: {x: -0.024999999, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandRing1
       parentName: Justin:LeftHand
-      position: {x: -0.0013422712, y: 0.00004174722, z: -0.00024382045}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.103252, y: 0.003211, z: -0.018755}
+      rotation: {x: -0.00473678, y: 0.02440227, z: 0.04293487, w: 0.9987687}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandRing2
       parentName: Justin:LeftHandRing1
-      position: {x: -0.0007078802, y: -3.694822e-18, z: 5.773175e-20}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.054452, y: 0, z: 0}
+      rotation: {x: 0.00000017974517, y: -0.0006464903, z: 0.03598163, w: 0.9993522}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandRing3
       parentName: Justin:LeftHandRing2
-      position: {x: -0.00048271246, y: -3.785292e-27, z: -8.6597396e-20}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.037132, y: 0, z: 0}
+      rotation: {x: 0.00000013545532, y: -0.00069633446, z: 0.03877915, w: 0.9992476}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandRing4
       parentName: Justin:LeftHandRing3
-      position: {x: -0.00025999997, y: -7.389644e-18, z: 1.9228485e-35}
+      position: {x: -0.02, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandPinky1
       parentName: Justin:LeftHand
-      position: {x: -0.0013016888, y: -0.0000101852265, z: -0.0005157283}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.10012999, y: -0.00078299997, z: -0.039670996}
+      rotation: {x: 0.009678477, y: 0.016070282, z: 0.036983363, w: 0.99913985}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandPinky2
       parentName: Justin:LeftHandPinky1
-      position: {x: -0.0004779133, y: 7.570584e-27, z: 1.7319479e-19}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.036763, y: 0, z: 0}
+      rotation: {x: 0.0066821217, y: 0.0057648704, z: 0.033594456, w: 0.99939656}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandPinky3
       parentName: Justin:LeftHandPinky2
-      position: {x: -0.00036547452, y: -1.261764e-27, z: -2.8865795e-20}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.028113, y: 0, z: 0}
+      rotation: {x: -0.000000009313221, y: -0.00072417, z: 0.04025224, w: 0.9991894}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftHandPinky4
       parentName: Justin:LeftHandPinky3
-      position: {x: -0.00037699996, y: 3.694822e-18, z: 1.9228485e-35}
+      position: {x: -0.029000001, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightShoulder
       parentName: Justin:Spine2
-      position: {x: 0.00079822564, y: 0.0013243114, z: -0.0004931216}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.061402, y: 0.10187, z: -0.037932}
+      rotation: {x: 0.0079907635, y: -0.021371068, z: 0.03221974, w: 0.9992204}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightArm
       parentName: Justin:RightShoulder
-      position: {x: 0.0016020056, y: -0.00014468688, z: -0.00023314939}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.123231, y: -0.01113, z: -0.017934998}
+      rotation: {x: 0.14028218, y: -0.0243998, z: -0.046920884, w: 0.9886981}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightForeArm
       parentName: Justin:RightArm
-      position: {x: 0.0035993115, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.27686998, y: 0, z: 0}
+      rotation: {x: -0.0023398395, y: -0.026111271, z: 0.009710745, w: 0.9996091}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHand
       parentName: Justin:RightForeArm
-      position: {x: 0.003623591, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.278738, y: 0, z: 0}
+      rotation: {x: 0.019275315, y: 0.14821076, z: -0.036710557, w: 0.9880862}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandThumb1
       parentName: Justin:RightHand
-      position: {x: 0.0003273096, y: -0.000121766694, z: 0.00032677685}
-      rotation: {x: -0.04386529, y: -0.019023845, z: 0.041285437, w: 0.99800277}
+      position: {x: 0.025178, y: -0.009366999, z: 0.025137}
+      rotation: {x: -0.0901343, y: 0.016544633, z: 0.21219926, w: 0.9729201}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandThumb2
       parentName: Justin:RightHandThumb1
-      position: {x: 0.0004242923, y: -0.00014130547, z: 0.00038569438}
-      rotation: {x: -0.028151225, y: -0.09898847, z: -0.005297661, w: 0.99467623}
+      position: {x: 0.032638, y: -0.010869999, z: 0.029669}
+      rotation: {x: 0.011495338, y: -0.1367592, z: -0.0026445698, w: 0.9905341}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandThumb3
       parentName: Justin:RightHandThumb2
-      position: {x: 0.00057414855, y: -0.00017813411, z: 0.00027755302}
-      rotation: {x: -0.005992907, y: -0.008890971, z: 0.0066906624, w: 0.9999202}
+      position: {x: 0.044165, y: -0.013703, z: 0.02135}
+      rotation: {x: -0.039196517, y: -0.046465088, z: 0.056681063, w: 0.99653995}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandThumb4
       parentName: Justin:RightHandThumb3
-      position: {x: 0.00033799995, y: -0.00012999999, z: 0.00012999999}
+      position: {x: 0.025999999, y: -0.01, z: 0.01}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandIndex1
       parentName: Justin:RightHand
-      position: {x: 0.0013606455, y: 0.00006364548, z: 0.0003525552}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.104665, y: 0.004896, z: 0.027119998}
+      rotation: {x: 0.0042344434, y: 0.008739857, z: -0.05401457, w: 0.99849296}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandIndex2
       parentName: Justin:RightHandIndex1
-      position: {x: 0.0006989796, y: 5.001351e-13, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.053767998, y: 0, z: 0}
+      rotation: {x: 0.00000012293452, y: 0.0010670549, z: -0.026683483, w: 0.9996434}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandIndex3
       parentName: Justin:RightHandIndex2
-      position: {x: 0.00044011098, y: -1.2617639e-27, z: -8.6597396e-20}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.033855, y: 0, z: 0}
+      rotation: {x: -0.000000013402093, y: 0.0016039058, z: -0.040064264, w: 0.9991958}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandIndex4
       parentName: Justin:RightHandIndex3
-      position: {x: 0.00033799995, y: 0, z: 0}
+      position: {x: 0.025999999, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandMiddle1
       parentName: Justin:RightHand
-      position: {x: 0.0013987483, y: 0.000063645464, z: 0.000055613837}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.107595995, y: 0.004896, z: 0.004278}
+      rotation: {x: 0.009065887, y: 0.0008929074, z: -0.052061614, w: 0.9986024}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandMiddle2
       parentName: Justin:RightHandMiddle1
-      position: {x: 0.0007301798, y: 5.001314e-13, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.056167997, y: 0, z: 0}
+      rotation: {x: 0.00000012293457, y: 0.0012227137, z: -0.030554188, w: 0.99953234}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandMiddle3
       parentName: Justin:RightHandMiddle2
-      position: {x: 0.000485726, y: 3.694822e-18, z: -4.3298698e-20}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.037364, y: 0, z: 0}
+      rotation: {x: -0.013882069, y: 0.002222537, z: -0.041208584, w: 0.99905163}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandMiddle4
       parentName: Justin:RightHandMiddle3
-      position: {x: 0.00029899998, y: 7.389644e-18, z: -2.8865795e-20}
+      position: {x: 0.022999998, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandRing1
       parentName: Justin:RightHand
-      position: {x: 0.0013611277, y: 0.000050423318, z: -0.00025171647}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.104701996, y: 0.003879, z: -0.019363}
+      rotation: {x: 0.005364565, y: -0.012544478, z: -0.05074606, w: 0.9986184}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandRing2
       parentName: Justin:RightHandRing1
-      position: {x: 0.0007021659, y: 5.001314e-13, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.054013, y: 0, z: 0}
+      rotation: {x: 0.00000008102504, y: 0.0013515434, z: -0.03381995, w: 0.9994271}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandRing3
       parentName: Justin:RightHandRing2
-      position: {x: 0.00044090755, y: 3.694822e-18, z: -2.8865795e-20}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.033915997, y: 0, z: 0}
+      rotation: {x: -0.016006675, y: 0.0022358864, z: -0.03985959, w: 0.99907464}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandRing4
       parentName: Justin:RightHandRing3
-      position: {x: 0.00028600002, y: -3.694822e-18, z: 5.773159e-20}
+      position: {x: 0.022, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandPinky1
       parentName: Justin:RightHand
-      position: {x: 0.0012962896, y: -0.000015488706, z: -0.00051402056}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.099715, y: -0.001191, z: -0.03954}
+      rotation: {x: 0.012138251, y: -0.010405879, z: -0.046880487, w: 0.9987726}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandPinky2
       parentName: Justin:RightHandPinky1
-      position: {x: 0.00047485856, y: 5.001314e-13, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.036528, y: 0, z: 0}
+      rotation: {x: 0.00000007078047, y: 0.0014375254, z: -0.03596124, w: 0.9993522}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandPinky3
       parentName: Justin:RightHandPinky2
-      position: {x: 0.0003616643, y: -7.389644e-18, z: -2.8865476e-20}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.02782, y: 0, z: 0}
+      rotation: {x: 0.00000006535685, y: 0.0016076877, z: -0.040182445, w: 0.9991911}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightHandPinky4
       parentName: Justin:RightHandPinky3
-      position: {x: 0.00037699996, y: -3.694822e-18, z: 0}
+      position: {x: 0.029000001, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftUpLeg
       parentName: Justin:Hips
-      position: {x: -0.0012523925, y: -0.00042552306, z: -9.2983246e-11}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.096338, y: -0.032732997, z: 0}
+      rotation: {x: -0.072660334, y: -0.037475068, z: -0.019534133, w: 0.99646103}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftLeg
       parentName: Justin:LeftUpLeg
-      position: {x: -0, y: -0.0060742623, z: -0.00022489546}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0, y: -0.467251, z: -0.0173}
+      rotation: {x: 0.2078368, y: -0.07774583, z: -0.024926618, w: 0.9747503}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftFoot
       parentName: Justin:LeftLeg
-      position: {x: -0.0000016386126, y: -0.0044452637, z: -0.00011019928}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.000126, y: -0.341943, z: -0.008477}
+      rotation: {x: -0.11972635, y: -0.02053461, z: 0.036954183, w: 0.9919064}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftToeBase
       parentName: Justin:LeftFoot
-      position: {x: 0.000023827264, y: -0.001585101, z: 0.0010766942}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.001833, y: -0.121930994, z: 0.082823}
+      rotation: {x: -0.0040509515, y: 0.00000004724198, z: -0.0000000016167827, w: 0.99999183}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:LeftFootToeBase_End
       parentName: Justin:LeftToeBase
-      position: {x: -0, y: 1.1275701e-22, z: 0.0016509999}
+      position: {x: -0, y: 0, z: 0.12699999}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightUpLeg
       parentName: Justin:Hips
-      position: {x: 0.0012523925, y: -0.00042552306, z: -9.2983246e-11}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.096338, y: -0.032732997, z: 0}
+      rotation: {x: -0.07151177, y: 0.1206689, z: 0.04579763, w: 0.98905396}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightLeg
       parentName: Justin:RightUpLeg
-      position: {x: -0, y: -0.0060742623, z: -0.00022489546}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0, y: -0.467251, z: -0.0173}
+      rotation: {x: 0.16385311, y: 0.03339581, z: 0.017672693, w: 0.9857609}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightFoot
       parentName: Justin:RightLeg
-      position: {x: -0.0000016388606, y: -0.0044452637, z: -0.00011019928}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: -0.000126, y: -0.341943, z: -0.008477}
+      rotation: {x: -0.06743456, y: 0.024026535, z: -0.061042886, w: 0.99556476}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightToeBase
       parentName: Justin:RightFoot
-      position: {x: 0.000023830238, y: -0.001585101, z: 0.0010766942}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      position: {x: 0.001833, y: -0.121930994, z: 0.082823}
+      rotation: {x: -0.00000014972254, y: 3.726649e-15, z: -0.000000024334227, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Justin:RightFootToeBase_End
       parentName: Justin:RightToeBase
-      position: {x: -0.00000041532513, y: -2.2551403e-22, z: 0.0016509999}
+      position: {x: -0.000032, y: 0, z: 0.12699999}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
@@ -993,7 +1015,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.012999999
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 1
