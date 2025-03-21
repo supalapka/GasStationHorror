@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 10fc4df2da32a41aaa32d77bc913491c
-NativeFormatImporter:
+guid: 57800445519d4a84bb1ac04164fec990
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +10,5 @@ AssetOrigin:
   productId: 196436
   packageName: Russian Car's Model Pack
   packageVersion: 1.0
-  assetPath: Assets/Settings/SampleSceneProfile.asset
+  assetPath: Assets/Russian Cars MP/Prefabs/Zhiguli.prefab
   uploadId: 438942

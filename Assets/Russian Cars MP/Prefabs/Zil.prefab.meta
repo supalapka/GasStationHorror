@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 10fc4df2da32a41aaa32d77bc913491c
-NativeFormatImporter:
+guid: b2806d3667efd5d4c82529f65aa499da
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +10,5 @@ AssetOrigin:
   productId: 196436
   packageName: Russian Car's Model Pack
   packageVersion: 1.0
-  assetPath: Assets/Settings/SampleSceneProfile.asset
+  assetPath: Assets/Russian Cars MP/Prefabs/Zil.prefab
   uploadId: 438942

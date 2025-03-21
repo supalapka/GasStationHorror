@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 10fc4df2da32a41aaa32d77bc913491c
+guid: a79e793af6082cf4e8628d063e72bccd
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 0
+  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 196436
   packageName: Russian Car's Model Pack
   packageVersion: 1.0
-  assetPath: Assets/Settings/SampleSceneProfile.asset
+  assetPath: Assets/Russian Cars MP/Materials/Body_Volga_2.mat
   uploadId: 438942

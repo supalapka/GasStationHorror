@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 10fc4df2da32a41aaa32d77bc913491c
-NativeFormatImporter:
+guid: 383826f60922b5a4bb0a82738a55979e
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +10,5 @@ AssetOrigin:
   productId: 196436
   packageName: Russian Car's Model Pack
   packageVersion: 1.0
-  assetPath: Assets/Settings/SampleSceneProfile.asset
+  assetPath: Assets/Russian Cars MP/Prefabs/Sputnik.prefab
   uploadId: 438942
