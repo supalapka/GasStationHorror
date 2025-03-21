@@ -1,3 +1,4 @@
+using Unity.Android.Gradle.Manifest;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,7 +12,10 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed = 5f;
     public float mouseSensitivity = 0.15f;
-    public float verticalLookLimit = 70f;  
+    public float verticalLookLimit = 70f;
+
+    private Vector3 velocity;
+
 
     [SerializeField] Camera playerCamera;    // Камера игрока
     private float currentXRotation = 0f;  // Текущий угол поворота по оси X
@@ -39,17 +43,21 @@ public class PlayerController : MonoBehaviour
         Look();
     }
 
-    // Обработка движения
     private void Move()
     {
         Vector3 moveDirection = new Vector3(moveInput.x, 0, moveInput.y).normalized;
 
-        // Применяем движение относительно направления камеры
         moveDirection = playerCamera.transform.TransformDirection(moveDirection);
         moveDirection.y = 0f;  // Отключаем движение по оси Y
 
-        // Перемещаем персонажа с помощью CharacterController
         characterController.Move(moveDirection * moveSpeed * Time.deltaTime);
+
+
+        if (!characterController.isGrounded)
+            velocity.y += -20f * Time.deltaTime;
+        else
+            velocity.y = 0f; 
+        characterController.Move(velocity * Time.deltaTime);
     }
 
     // Обработка вращения
