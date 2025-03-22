@@ -9,6 +9,7 @@ public class NPC_MovementController : MonoBehaviour
     [SerializeField] Transform carEnterTransform;
 
     [SerializeField] private DialogueSystem dialogueSystem;
+    [SerializeField] private CarController carController;
 
     private bool isEnteringCar;
 
@@ -23,7 +24,12 @@ public class NPC_MovementController : MonoBehaviour
     }
 
 
-    public void WalkToInteractionZone() => agent.SetDestination(interactionZonePosition); //calls in animation in the end of exiting car
+    public void WalkToInteractionZone() //calls in animation in the end of exiting car
+    {
+        agent.enabled = true;
+        agent.SetDestination(interactionZonePosition); 
+    }
+
     public void WalkToCar()
     {
         agent.SetDestination(carEnterTransform.position);
@@ -49,5 +55,8 @@ public class NPC_MovementController : MonoBehaviour
         agent.enabled = false;
         animator.SetTrigger("EnteringCar");
         transform.rotation = Quaternion.Euler(0, -270, 0);
+        Invoke(nameof(CarLeave), 4f);
     }
+
+    private void CarLeave() => carController.CarLeave();
 }

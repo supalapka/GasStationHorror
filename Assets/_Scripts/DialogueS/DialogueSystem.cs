@@ -7,8 +7,6 @@ using UnityEngine.Localization;
 
 public class DialogueSystem : MonoBehaviour
 {
-    public TextMeshProUGUI dialogueText;
-    public GameObject dialoguePanel;
     public float typingSpeed = 0.05f;
     public FuelTank fuelTank;
 
@@ -56,7 +54,7 @@ public class DialogueSystem : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             canDialogue = false;
-            dialoguePanel.SetActive(false);
+            DialogueUIController.instance.gameObject.SetActive(false);
         }
     }
 
@@ -70,8 +68,8 @@ public class DialogueSystem : MonoBehaviour
                 {
                     // Если текст еще печатается, мгновенно показать его
                     StopAllCoroutines();
-                    dialogueText.text = currentText;
-                    isTyping = false;
+                    DialogueUIController.instance.dialogueLineText.text = currentText;
+                   isTyping = false;
                 }
                 else
                 {
@@ -97,7 +95,7 @@ public class DialogueSystem : MonoBehaviour
 
         currentText = localizedString.GetLocalizedString();
 
-        dialoguePanel.SetActive(true);
+        DialogueUIController.instance.gameObject.SetActive(true);
         if (currentLineIndex < dialogueLinesAmount)
         {
             StartCoroutine(TypeText(currentText));
@@ -110,7 +108,7 @@ public class DialogueSystem : MonoBehaviour
         else
         {
             Debug.Log("Dialogue is ended");
-            dialoguePanel.SetActive(false);
+            DialogueUIController.instance.gameObject.SetActive(false);
             OnDialogueCompleted?.Invoke();
         }
     }
@@ -118,10 +116,10 @@ public class DialogueSystem : MonoBehaviour
     private IEnumerator TypeText(string line)
     {
         isTyping = true;
-        dialogueText.text = "";
+        DialogueUIController.instance.dialogueLineText.text = "";
         foreach (char letter in line)
         {
-            dialogueText.text += letter;
+            DialogueUIController.instance.dialogueLineText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
         isTyping = false;
