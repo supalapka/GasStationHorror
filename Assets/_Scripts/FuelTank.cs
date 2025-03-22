@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 
 public class FuelTank : MonoBehaviour
 {
     public float requiredFuel = 35f;
     public float fuelAmount = 0f;
+
+    public event Action OnFuelingComplete;
 
 
     public void Refuel(float amount)
@@ -12,9 +15,8 @@ public class FuelTank : MonoBehaviour
         if (fuelAmount > requiredFuel)
         {
             fuelAmount = requiredFuel;
+            OnFuelingComplete?.Invoke();
         }
-        Debug.Log("Fuel amount - " + fuelAmount);
-
     }
 
     public bool IsMax() => fuelAmount == requiredFuel;

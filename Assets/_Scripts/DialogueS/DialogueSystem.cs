@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -9,9 +10,12 @@ public class DialogueSystem : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public GameObject dialoguePanel;
     public float typingSpeed = 0.05f;
+    public FuelTank fuelTank;
 
     public string dialogueKey;
     public int dialogueLinesAmount;
+    public int requestFuelAfterLine;
+
 
     private int currentLineIndex = 0;
     private bool isTyping = false;
@@ -19,6 +23,12 @@ public class DialogueSystem : MonoBehaviour
 
     private bool canDialogue = false;
     private bool isNpcInPosition = false;
+    private bool waitingForFuel = false;
+
+
+    private void OnEnable() => fuelTank.OnFuelingComplete += OnFuelCompleted;
+    private void OnFuelCompleted() => waitingForFuel = false;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -29,7 +39,11 @@ public class DialogueSystem : MonoBehaviour
         if (other.CompareTag("Player") && isNpcInPosition)
         {
             canDialogue = true;
-            ShowNextDialogue();
+
+            if (waitingForFuel)
+                StartCoroutine(TypeText(currentText));
+            else
+                ShowNextDialogue();
         }
     }
 
@@ -60,8 +74,11 @@ public class DialogueSystem : MonoBehaviour
                 }
                 else
                 {
-                    // Иначе перейти к следующей строке
-                    ShowNextDialogue();
+                    // Иначе перейти к следующей строке если не ждет пока игрок заправит машину
+                    if (waitingForFuel)
+                        StartCoroutine(TypeText(currentText));
+                    else
+                        ShowNextDialogue();
                 }
             }
         }
@@ -83,6 +100,10 @@ public class DialogueSystem : MonoBehaviour
         if (currentLineIndex < dialogueLinesAmount)
         {
             StartCoroutine(TypeText(currentText));
+
+            if (currentLineIndex == requestFuelAfterLine)
+                waitingForFuel = true;
+
             currentLineIndex++;
         }
         else
