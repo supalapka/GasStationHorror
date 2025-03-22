@@ -197,8 +197,10 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   dialoguePanel: {fileID: 0}
   typingSpeed: 0.05
+  fuelTank: {fileID: 0}
   dialogueKey: 
   dialogueLinesAmount: 0
+  requestFuelAfterLine: 0
 --- !u!1 &1097680456547791301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,6 +1416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4134c75c571b9ea4e808805b1073e45b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skinGO: {fileID: 5108098028288379333}
 --- !u!114 &4828580606178053579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1427,6 +1430,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionZonePosition: {x: 0, y: 0, z: 0}
+  carEnterTransform: {fileID: 0}
+  dialogueSystem: {fileID: 1821035909206778990}
 --- !u!195 &2702636924243447957
 NavMeshAgent:
   m_ObjectHideFlags: 0

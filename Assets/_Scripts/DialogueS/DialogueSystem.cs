@@ -16,6 +16,7 @@ public class DialogueSystem : MonoBehaviour
     public int dialogueLinesAmount;
     public int requestFuelAfterLine;
 
+    public Action OnDialogueCompleted;
 
     private int currentLineIndex = 0;
     private bool isTyping = false;
@@ -110,6 +111,7 @@ public class DialogueSystem : MonoBehaviour
         {
             Debug.Log("Dialogue is ended");
             dialoguePanel.SetActive(false);
+            OnDialogueCompleted?.Invoke();
         }
     }
 
