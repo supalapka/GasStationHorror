@@ -128,6 +128,80 @@ Transform:
   - {fileID: 4423840856059794774}
   m_Father: {fileID: 3007721982822224667}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1097440954118278216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7163348166257754730}
+  - component: {fileID: 1106524099222564123}
+  - component: {fileID: 1821035909206778990}
+  m_Layer: 0
+  m_Name: DIalogueTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7163348166257754730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097440954118278216}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8028104248344499368}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1106524099222564123
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097440954118278216}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9595687, y: 0.7041862, z: 3.5924263}
+  m_Center: {x: 0, y: 1.737166, z: 1.5273952}
+--- !u!114 &1821035909206778990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097440954118278216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c2c2fadf7b98784d9ed5b080d7e293f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 0}
+  dialoguePanel: {fileID: 0}
+  typingSpeed: 0.05
+  dialogueLines:
+  - First dialogue message
+  - Hey hey hey gay
+  - nice weapon bro I kill you after u let me see it
+  - end
 --- !u!1 &1097680456547791301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,6 +1358,7 @@ GameObject:
   - component: {fileID: 4828580606178053579}
   - component: {fileID: 2702636924243447957}
   - component: {fileID: 8481480840170026379}
+  - component: {fileID: 2421924126096819017}
   m_Layer: 0
   m_Name: Soldier
   m_TagString: Untagged
@@ -1306,6 +1381,7 @@ Transform:
   m_Children:
   - {fileID: 7973535551453946340}
   - {fileID: 4531000779516837426}
+  - {fileID: 7163348166257754730}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &3693569431845288360
@@ -1400,6 +1476,18 @@ CapsuleCollider:
   m_Height: 2.365395
   m_Direction: 1
   m_Center: {x: 0, y: 1.1793997, z: 0}
+--- !u!114 &2421924126096819017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8504603951797365816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea93777899199a4190fbc5e14b63195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8557257272118926946
 GameObject:
   m_ObjectHideFlags: 0
