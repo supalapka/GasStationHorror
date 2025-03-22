@@ -2,15 +2,20 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Localization;
 
 public class DialogueSystem : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
     public GameObject dialoguePanel;
     public float typingSpeed = 0.05f;
-    public string[] dialogueLines;
+
+    public string dialogueKey;
+    public int dialogueLinesAmount;
+
     private int currentLineIndex = 0;
     private bool isTyping = false;
+    private string currentText;
 
     private bool canDialogue = false;
     private bool isNpcInPosition = false;
@@ -50,7 +55,7 @@ public class DialogueSystem : MonoBehaviour
                 {
                     // Если текст еще печатается, мгновенно показать его
                     StopAllCoroutines();
-                    dialogueText.text = dialogueLines[currentLineIndex - 1];
+                    dialogueText.text = currentText;
                     isTyping = false;
                 }
                 else
@@ -65,10 +70,19 @@ public class DialogueSystem : MonoBehaviour
 
     private void ShowNextDialogue()
     {
-        dialoguePanel.SetActive(true);
-        if (currentLineIndex < dialogueLines.Length)
+        string key = $"{dialogueKey}_{currentLineIndex}";
+        LocalizedString localizedString = new LocalizedString
         {
-            StartCoroutine(TypeText(dialogueLines[currentLineIndex]));
+            TableReference = "Dialogues Table",
+            TableEntryReference = key
+        };
+
+        currentText = localizedString.GetLocalizedString();
+
+        dialoguePanel.SetActive(true);
+        if (currentLineIndex < dialogueLinesAmount)
+        {
+            StartCoroutine(TypeText(currentText));
             currentLineIndex++;
         }
         else
