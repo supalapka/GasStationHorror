@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2793778232019038597}
+  - component: {fileID: -1335055361551876197}
   m_Layer: 0
   m_Name: Justin_Car
   m_TagString: Untagged
@@ -32,6 +33,18 @@ Transform:
   - {fileID: 5118036871589740695}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1335055361551876197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528303562378309193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f92c833c8b0d34f83558097bc14fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2611407582935053464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44,7 +57,7 @@ PrefabInstance:
         type: 3}
       propertyPath: fuelTank
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7273558420281618080}
     - target: {fileID: 2162122279275979010, guid: 853593c57b022274db125c5d5408c975,
         type: 3}
       propertyPath: dialogueKey
@@ -283,6 +296,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5786831980225728661}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7273558420281618080 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3800523368195063349, guid: 6bffa2b80f6b8ec4281f59677cdc429c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5786831980225728661}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd4468821f778b41ac4f6caae457056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8668891208141616059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2882554009631073070, guid: 6bffa2b80f6b8ec4281f59677cdc429c,

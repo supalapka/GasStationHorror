@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -6,8 +5,9 @@ using UnityEngine.InputSystem;
 public class FuelingNozzle : MonoBehaviour
 {
      float fuelingSpeed = 0.05f;
+    public AudioSource fuelingSound;
 
-    [SerializeField] bool canFuel = false;
+    bool canFuel = false;
     private bool isFueling = false;
     private FuelTank fuelTank;
     private Animator animator;
@@ -49,14 +49,12 @@ public class FuelingNozzle : MonoBehaviour
 
         if (canFuel && Mouse.current.leftButton.isPressed)
         {
-            Debug.Log("Trying to fuel");
             if(isFueling == false)
             {
                 isFueling = true;
                 animator.SetTrigger("StartFuel");
-                Debug.Log("Start fueling");
             }
-
+            fuelingSound.enabled = true;
             fuelTank.Refuel(fuelingSpeed);
             gasCounter.text = $"{(int)(fuelTank.fuelAmount)}/{fuelTank.requiredFuel}";
         }
@@ -64,9 +62,9 @@ public class FuelingNozzle : MonoBehaviour
         if (isFueling && Mouse.current.leftButton.isPressed == false ||
             isFueling && canFuel == false)
         {
-            Debug.Log("Stop fueling");
             animator.SetTrigger("StopFuel");
             isFueling = false;
+            fuelingSound.enabled = false;
         }
     }
 

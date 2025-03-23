@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1645324815816007428}
+  - component: {fileID: 2807570951124616642}
   m_Layer: 0
   m_Name: Alexis_Car
   m_TagString: Untagged
@@ -25,13 +26,25 @@ Transform:
   m_GameObject: {fileID: 6175497257150931191}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.254967, y: 0.2527268, z: 53.923546}
+  m_LocalPosition: {x: 28.254967, y: 0, z: 53.923546}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2439791671367556853}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2807570951124616642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6175497257150931191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f92c833c8b0d34f83558097bc14fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4207545066783369443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -133,6 +146,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4207545066783369443}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7485395277371494239 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6738867916328708028, guid: 059f8a80b743d2e4b99639f67d841a6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4207545066783369443}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd4468821f778b41ac4f6caae457056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5016504764202001913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -146,6 +171,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4207568581824851012, guid: 47356dac8bc86084588f8385af42a006,
+        type: 3}
+      propertyPath: fuelTank
+      value: 
+      objectReference: {fileID: 7485395277371494239}
     - target: {fileID: 4207568581824851012, guid: 47356dac8bc86084588f8385af42a006,
         type: 3}
       propertyPath: dialogueKey

@@ -5,6 +5,8 @@ public class DialogueUIController : MonoBehaviour
 {
     public static DialogueUIController instance;
     public TextMeshProUGUI dialogueLineText;
+    public AudioSource audioSource;
+
 
     private void Start()
     {
@@ -16,4 +18,6 @@ public class DialogueUIController : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public void EnableTextGeneratingSound() => audioSource.enabled = true;
+    public void DisableTextGeneratingSound() { audioSource.enabled = false; }
 }

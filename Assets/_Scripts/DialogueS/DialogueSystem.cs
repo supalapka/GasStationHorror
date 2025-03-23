@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Localization;
@@ -69,7 +68,8 @@ public class DialogueSystem : MonoBehaviour
                     // Если текст еще печатается, мгновенно показать его
                     StopAllCoroutines();
                     DialogueUIController.instance.dialogueLineText.text = currentText;
-                   isTyping = false;
+                    DialogueUIController.instance.DisableTextGeneratingSound();
+                    isTyping = false;
                 }
                 else
                 {
@@ -116,6 +116,7 @@ public class DialogueSystem : MonoBehaviour
     private IEnumerator TypeText(string line)
     {
         isTyping = true;
+        DialogueUIController.instance.EnableTextGeneratingSound();
         DialogueUIController.instance.dialogueLineText.text = "";
         foreach (char letter in line)
         {
@@ -123,5 +124,6 @@ public class DialogueSystem : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
         isTyping = false;
+        DialogueUIController.instance.DisableTextGeneratingSound();
     }
 }
