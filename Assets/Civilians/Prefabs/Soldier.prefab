@@ -1430,6 +1430,7 @@ MonoBehaviour:
   interactionZonePosition: {x: 0, y: 0, z: 0}
   carEnterTransform: {fileID: 0}
   dialogueSystem: {fileID: 1821035909206778990}
+  carController: {fileID: 0}
 --- !u!195 &2702636924243447957
 NavMeshAgent:
   m_ObjectHideFlags: 0

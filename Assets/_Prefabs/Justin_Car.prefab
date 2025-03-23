@@ -44,7 +44,7 @@ PrefabInstance:
         type: 3}
       propertyPath: fuelTank
       value: 
-      objectReference: {fileID: 637578721759521718}
+      objectReference: {fileID: 0}
     - target: {fileID: 2162122279275979010, guid: 853593c57b022274db125c5d5408c975,
         type: 3}
       propertyPath: dialogueKey
@@ -258,18 +258,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 304305361125666338}
   m_SourcePrefab: {fileID: 100100000, guid: 6bffa2b80f6b8ec4281f59677cdc429c, type: 3}
---- !u!114 &637578721759521718 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6383807935250397987, guid: 6bffa2b80f6b8ec4281f59677cdc429c,
-    type: 3}
-  m_PrefabInstance: {fileID: 5786831980225728661}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cd4468821f778b41ac4f6caae457056, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5027437213248213717 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1552614343307477568, guid: 6bffa2b80f6b8ec4281f59677cdc429c,
