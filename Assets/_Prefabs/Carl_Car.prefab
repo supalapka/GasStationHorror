@@ -278,6 +278,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3833412220194660674}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &4267997151818786665 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1011617567624758827, guid: ab9a95769f120804a8e7cd20f1070a70,
+    type: 3}
+  m_PrefabInstance: {fileID: 3833412220194660674}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4717149063793426990 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8378289659530273644, guid: ab9a95769f120804a8e7cd20f1070a70,
@@ -303,6 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPC_GO: {fileID: 16868494989433385}
+  audioSource: {fileID: 4267997151818786665}
 --- !u!95 &7974680423761019235
 Animator:
   serializedVersion: 7

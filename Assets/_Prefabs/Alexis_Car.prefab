@@ -108,6 +108,11 @@ PrefabInstance:
       propertyPath: NPC_GO
       value: 
       objectReference: {fileID: 1205152064994329067}
+    - target: {fileID: 3269964676870188351, guid: 059f8a80b743d2e4b99639f67d841a6f,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1310867787530824301}
     - target: {fileID: 7841980199732351839, guid: 059f8a80b743d2e4b99639f67d841a6f,
         type: 3}
       propertyPath: m_Name
@@ -122,6 +127,12 @@ PrefabInstance:
       addedObject: {fileID: 708873913663486331}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059f8a80b743d2e4b99639f67d841a6f, type: 3}
+--- !u!82 &1310867787530824301 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -6317124499769195890, guid: 059f8a80b743d2e4b99639f67d841a6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4207545066783369443}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1658745774856324572 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3269964676870188351, guid: 059f8a80b743d2e4b99639f67d841a6f,

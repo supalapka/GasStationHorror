@@ -271,6 +271,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 304305361125666338}
   m_SourcePrefab: {fileID: 100100000, guid: 6bffa2b80f6b8ec4281f59677cdc429c, type: 3}
+--- !u!82 &2733847216432939922 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -739040547534761209, guid: 6bffa2b80f6b8ec4281f59677cdc429c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5786831980225728661}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5027437213248213717 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1552614343307477568, guid: 6bffa2b80f6b8ec4281f59677cdc429c,
@@ -290,6 +296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPC_GO: {fileID: 6160644066517900748}
+  audioSource: {fileID: 2733847216432939922}
 --- !u!4 &5118036871589740695 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1677624317418721282, guid: 6bffa2b80f6b8ec4281f59677cdc429c,

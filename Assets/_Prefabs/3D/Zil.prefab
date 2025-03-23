@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 3745632817962269966}
   - component: {fileID: 9038781591208244251}
   - component: {fileID: 9001047182757058560}
+  - component: {fileID: 4128980051897732676}
   m_Layer: 0
   m_Name: Zil
   m_TagString: Untagged
@@ -235,6 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPC_GO: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!95 &9038781591208244251
 Animator:
   serializedVersion: 7
@@ -278,6 +280,148 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.8101522, y: 1.1636703, z: 5.4339676}
   m_Center: {x: 0, y: 0.8997937, z: -0.029660005}
+--- !u!82 &4128980051897732676
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2314393182919758018}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 937d2f3a2c42a6e4188a01a9c26c1013, type: 3}
+  m_Resource: {fileID: 8300000, guid: 937d2f3a2c42a6e4188a01a9c26c1013, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.282
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 50.59
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.12891287
+      value: 1.0086975
+      inSlope: -50.610233
+      outSlope: -50.610233
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.14867961
+      value: 0.5086975
+      inSlope: -11.219086
+      outSlope: -11.219086
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.3430974
+    - serializedVersion: 3
+      time: 0.18821312
+      value: 0.2586975
+      inSlope: -3.1631396
+      outSlope: -3.1631396
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.26728013
+      value: 0.13369751
+      inSlope: -0.7907849
+      outSlope: -0.7907849
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.42541414
+      value: 0.07119751
+      inSlope: -0.19769622
+      outSlope: -0.19769622
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.63253605
+      value: 0.03125
+      inSlope: -0.049424056
+      outSlope: -0.049424056
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.019766752
+      inSlope: -0.019774633
+      outSlope: -0.019774633
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.10914612
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.10914612
+      value: 0.00869751
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.10914612
+      value: 1.0086975
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3553359227636058701
 GameObject:
   m_ObjectHideFlags: 0

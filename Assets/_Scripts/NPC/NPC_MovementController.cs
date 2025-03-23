@@ -11,6 +11,8 @@ public class NPC_MovementController : MonoBehaviour
     [SerializeField] private DialogueSystem dialogueSystem;
     [SerializeField] private CarController carController;
 
+    [SerializeField] private AudioSource audioSource;
+
     private bool isEnteringCar;
 
 
@@ -23,6 +25,7 @@ public class NPC_MovementController : MonoBehaviour
         dialogueSystem.OnDialogueCompleted += WalkToCar;
     }
 
+    public void PlayExitCarSound() { audioSource.Play(); } //calls in animation
 
     public void WalkToInteractionZone() //calls in animation in the end of exiting car
     {

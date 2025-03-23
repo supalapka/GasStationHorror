@@ -198,6 +198,11 @@ PrefabInstance:
       propertyPath: NPC_GO
       value: 
       objectReference: {fileID: 4131392013529702596}
+    - target: {fileID: 3745632817962269966, guid: aefa40ac47191074db21b0a3922a184e,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 6259654708886492758}
     - target: {fileID: 5547047418782869896, guid: aefa40ac47191074db21b0a3922a184e,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -286,6 +291,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cd4468821f778b41ac4f6caae457056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &6259654708886492758 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4128980051897732676, guid: aefa40ac47191074db21b0a3922a184e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8040006919119575058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &6658851883641316636 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3745632817962269966, guid: aefa40ac47191074db21b0a3922a184e,
